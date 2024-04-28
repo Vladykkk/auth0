@@ -25,7 +25,6 @@ function Home() {
 
         <img src={HelpImage} alt="help-main-image" className="help-image" />
         <ExpandedPanel />
-        <RequestDetails />
       </div>
     </div>
   );

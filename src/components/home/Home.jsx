@@ -3,7 +3,7 @@ import Header from "../header/Header";
 import HelpImage from "/help-image.svg";
 
 import ExpandedPanel from "../expandedPanel/ExpandedPanel";
-import HelpRequests from "../helpRequests/HelpRequests";
+import RequestDetails from "../requestDetails/RequestDetails";
 
 import "/src/reset.css";
 import "./home.css";
@@ -25,7 +25,7 @@ function Home() {
 
         <img src={HelpImage} alt="help-main-image" className="help-image" />
         <ExpandedPanel />
-        <HelpRequests />
+        <RequestDetails />
       </div>
     </div>
   );

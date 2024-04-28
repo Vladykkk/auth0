@@ -14,11 +14,15 @@ body {
 
 .header {
   background-color: #333;
+  width: 100%;
+  height: 85px;
   color: #fff;
   padding: 10px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  z-index: 1;
 }
 
 .help-logo {
@@ -33,7 +37,8 @@ body {
 .add-button {
   padding: 15px 25px;
   margin-right: 40px;
-  font-size: 1rem;
+  width: 180px;
+  font-size: 1.1rem;
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -41,6 +46,7 @@ body {
   cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .add-button:hover {
@@ -53,7 +59,9 @@ body {
 }
 
 .main-content {
-  padding: 20px 100px;
+  padding: 100px 7%;
+  position: relative;
+  margin: 0 auto;
 }
 
 .main-content h1 {
@@ -62,7 +70,7 @@ body {
 }
 
 .main-content p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   line-height: 1.6;
   margin-bottom: 15px;
 }
@@ -74,12 +82,12 @@ body {
   margin: 20px auto;
 }
 
-.left-menu {
+.left-menu-button {
   position: fixed;
   left: 0;
-  top: 50%;
+  top: 58%;
   transform: translateY(-50%);
-  height: 200px;
-  width: 20px;
+  height: 300px;
+  width: 50px;
   background-color: #2c2c2c;
 }

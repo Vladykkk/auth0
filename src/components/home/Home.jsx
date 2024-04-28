@@ -3,8 +3,11 @@ import Auth from "../auth/Auth";
 import ExpandedPanel from "../expandedPanel/ExpandedPanel";
 import Logo from "/logo.jpg";
 import HelpImage from "/help-image.svg";
+import HelpReqests from "../helpReqests/HelpReqests";
+
 import "/src/reset.css";
 import "./home.css";
+
 
 function Home() {
     const [expanded, setExpanded] = useState(false);
@@ -36,6 +39,9 @@ function Home() {
                 <img src={HelpImage} alt="help-main-image" className="help-image" />
                 <button className="left-menu-button" onClick={toggleExpanded}></button>
                 <ExpandedPanel expanded={expanded} />
+                <HelpReqests />
+
+            
             </div>
         </div>
     );

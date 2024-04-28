@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./components/home/Home";
-import Victim from "./components/victim/Victim";
+import Victim from "./components/Victim/Victim";
 import Helper from "./components/helper/Helper";
 
 import "./reset.css";

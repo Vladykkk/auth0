@@ -5,7 +5,7 @@ import "./authButton.css";
 const LogoutButton = () => {
   const { logout, isAuthenticated } = useAuth0();
 
-  return isAuthenticated && <button onClick={() => logout()}>Sign Out</button>;
+  return isAuthenticated && <button onClick={() => logout()}>Logout</button>;
 };
 
 export default LogoutButton;

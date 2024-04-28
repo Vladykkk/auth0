@@ -2,8 +2,27 @@
 Вас вітає максимально іноваційний проект: Click2Help. Він надає можливість клікнути і допомогти або-ж бути тим кому допоможуть.
 
 </hr>
-<h3>How to start?</h3>
-<p>1. Step1...</p>
+
+## Installation
+<h3>Install all dependencies</h3>
+
+```
+npm install
+```
+
+## Running
+<h3>Run in development</h3>
+
+```
+npm run dev
+```
+
+## Building
+<h3>How to build</h3>
+
+```
+npm run build
+```
 
 </hr>
 

@@ -1,30 +1,17 @@
-import { useState } from "react";
-import Auth from "../auth/Auth";
-import ExpandedPanel from "../expandedPanel/ExpandedPanel";
+import Header from "../header/Header";
 
-import Logo from "/logo.jpg";
 import HelpImage from "/help-image.svg";
+
+import ExpandedPanel from "../expandedPanel/ExpandedPanel";
 import HelpRequests from "../helpRequests/HelpRequests";
 
 import "/src/reset.css";
 import "./home.css";
 
 function Home() {
-  const [expanded, setExpanded] = useState(false);
-
-  const toggleExpanded = () => {
-    setExpanded(!expanded);
-  };
-
   return (
     <div className="App">
-      <header className="header">
-        <img src={Logo} alt="help-logo" className="help-logo" />
-        <div className="menu">
-          <button className="add-button"> add an ad </button>
-          <Auth />
-        </div>
-      </header>
+      <Header />
       <div className="main-content">
         <h1 className="main-heading">
           Need help? Find and offer services here!
@@ -37,8 +24,7 @@ function Home() {
         </p>
 
         <img src={HelpImage} alt="help-main-image" className="help-image" />
-        <button className="left-menu-button" onClick={toggleExpanded}></button>
-        <ExpandedPanel expanded={expanded} />
+        <ExpandedPanel />
         <HelpRequests />
       </div>
     </div>
